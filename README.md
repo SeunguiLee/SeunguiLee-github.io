@@ -9,9 +9,9 @@
  
  ### 메인화면
  ```
- https://riahnrhyme.github.io
+ https://SeunguiLee.github.io
  ```
  ### 1번 프로젝트
  ```
- https://riahnrhyme.github.io/first/first.html
+ https://SeunguiLEe.github.io/first/first.html
  ```
