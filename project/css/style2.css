@@ -1,0 +1,91 @@
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+
+
+/*common*/
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+.body {
+    background: #f1f1f1;
+    color: #444; /*밑으로 상속될거기 때문에 굳이 컬러가444인건 안써도댐!*/
+}
+
+/*header*/
+.header {
+    background: #fff;
+    border-bottom: 1px solid lightgray;
+}
+.header .top {
+    height: 60px;
+    border-bottom: 1px solid lightgray;
+}
+.header .nav {
+    height: 100px;
+}
+
+.top .top_left {
+    float: left;
+}
+.top .top_left .left_menu {
+    float: left;
+    font-size: 11px;
+    color: #999;
+    line-height: 60px;
+    border-right: 1px solid #ddd;
+}
+.top .top_left .contact {
+    border-left: 1px solid #ddd;
+    padding: 0 30px; /*border때문에 padding으로 줘야함! margin으로 하면 border가 포함되지 않은 체 되기 때문에.*/
+}
+.top .top_left .left_menu_span {
+    color: #444;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+.top .top_right {
+    float: right;
+}
+.top .top_right li {
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 60px;
+    padding: 0 30px;
+    color: #444;
+    border-left: 1px solid #ddd;
+}
+.top .top_right li:last-child {
+    border-right: 1px solid #ddd;
+    /*last-child쓰는 이유 : 항상 마지막 이기 때문에 태그가 바뀌어도 상관없음!!*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
