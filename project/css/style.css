@@ -1,20 +1,26 @@
+/* Initialization */ 
 * {margin: 0; padding: 0;}
-ul {list-style: none;}
+li {list-style: none;}
 
-.container {
+/* common */
+.wrapper {
     width: 1200px;
-    height: 
+    margin: 0 auto;
+}
+.body{
+    background: #f1f1f1;
+    color: #777;
 }
 
-.headerTop{
-    float: left;
-    
+/* header */
+#header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
 }
 
-
-
-
-
+.headerTop {
+    height: 48px;
+}
 
 
 
