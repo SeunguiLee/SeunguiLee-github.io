@@ -12,35 +12,6 @@ li {list-style: none;}
     color: #777;
 }
 
-/* header */
-#header {
-    background: #fff;
-    border-bottom: 1px solid #ddd;
-}
-
-.headerTop {
-    height: 48px;
-    border-bottom:1px solid #ddd; 
-}
-.headerTopleft{
-    float: left;
-}
-.headerTopLeft .leftMenu {
-    float:left; 
-    font-size:11px; 
-    color:#999;  
-    line-height:40px; 
-    border-right:1px solid #ddd; 
-    padding:0 30px; 
-}
-.headerBottom {
-    height: 130px;
-}
-
-
-
-
-
 
 
 
