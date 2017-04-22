@@ -1,6 +1,11 @@
 /* Initialization */
 * { margin:0; padding:0; }
 li { list-style:none; }
+a {
+    text-decoration: none;
+    color: #444;
+}
+
 
 /* common */
 .wrapper { 
@@ -11,6 +16,7 @@ body {
     background:#f1f1f1; 
     color:#444; 
 }
+
 
 /* header */
 .header { 
@@ -63,12 +69,77 @@ body {
 }
 
 
+/* nav */
+h1 {
+    float: left;
+    text-align: center;
+    width: 50px;
+    border: 3px solid #111;
+    font-size: 16px;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    margin: 16px 0; /*32가 나머지 공간이니까 똑같이 나눠서 16.   h1이 float기반이라 1px이라도 삐져나오면 1px이 오버되서 삐져나옴. -> float가 제대로 나오지 않음.*/
+}
+.menu {
+    float: right;
+    height: 100px; 
+    position: relative; /*sub의 부모에게 relative주면 ul입장에서의 끝에 sub가 위치*/
+}
+.menu li {
+    float: left;
+    height: 100px; 
+    padding: 0 15px;
+}
+.menu li a {
+    display: block; /*a태그는 diplay:inline이기 떄문에 일단 block으로 바꾸고 시작*/
+    height: 34px; /*짝수로 해주는게 좋음,. 위아래 간격 정하기 쉽기떄문*/
+    line-height: 34px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 33px 0px; /*100-34=66 , 66/2=33*/
+    padding: 0 15px; /*안쪽공간 확보를 위해 margin이 아닌 padding에 15px*/
+    border-radius: 20px;
+    transition: all .3s ease; /*좀더 부드럽게 하기 위해*/
+}
+/*.menu li a:hover {
+    background-color: yellowgreen;
+    color: #fff;
+}*/
+.menu li:hover a{
+    background-color: yellowgreen;
+    color: #fff;
+}
+.search {
+    float: right;
+    line-height: 100px; /*돋보기도 메뉴라인에 맞춰서 내려줌*/
+    margin-left: 15px;
+    width: 15px; /*search에 넓이 15를주면 마진과 넓이까지 합해서 30을 갖게됨*/
+}
 
 
+/* sub */
+.menu li .active a {
+    background-color: yellowgreen;
+    color: #fff;
+}
 
-
-
-
+.sub {
+    width: 800px;
+    height: 300px;
+    background: #fff;
+    position: absolute; /*절대적 좌표를 가지기 때문에 태그안에서 영향을 발휘하지 않는다. 태그에 관여하지 않고 본인 크기 설정*/
+    top: 100%; /*relative기준에서 그 relative만큼 딱 내려옴 100퍼센트하면*/
+    right: -30px; /*search넓이 30. -30해주면 딱 맞게 떨어짐 공간이.*/
+    border-top: 3px solid yellowgreen;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.07); /*자체가 투명해지는건 opacity , 배경이 투명해지는건 rgba*/
+    display: none;
+} 
+.menu li:hover + .sub {
+    display: block;
+}
 
 
 
